@@ -1,17 +1,30 @@
-# flutter_application_7
+# Color Explorer App 🎨
 
-A new Flutter project.
+A multi-screen Flutter application developed as a task for the SBS student activity. This project demonstrates core Flutter concepts including screen navigation, state management, form validation, and responsive UI components.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+* **🔐 Login & Registration:** * Includes input validation to ensure all fields are filled.
+    * Features a password visibility toggle (Eye icon) for better user experience.
+* **🧭 Main Navigation Shell:** * Implements a `BottomNavigationBar` to switch seamlessly between the Gallery and Settings screens without losing state.
+* **🎨 Interactive Color Gallery:** * Displays a 2-column grid of color cards.
+    * Includes a real-time search functionality that instantly filters the color grid based on user input.
+* **✨ Dynamic Detail Screen:** * Tapping a color card navigates to a detail screen where the entire background adapts dynamically to the selected color.
+* **⚙️ Settings & Info:** * Displays developer information cleanly.
+    * Features a secure **Logout** button that clears the entire navigation history, preventing users from returning to the app using the device's back button.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies & Widgets Used
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* **Framework:** Flutter / Dart
+* **UI Components:**
+    * `Scaffold`, `AppBar`, `BottomNavigationBar`
+    * `GridView.builder` (For the responsive color gallery)
+    * `ListView.builder` (For displaying settings and developer info)
+* **Controllers & Logic:**
+    * `TextEditingController` (For handling form inputs and search logic)
+    * `Navigator.pushAndRemoveUntil` (For secure logout routing)
+    * `Navigator.push` & `Navigator.pop` (For passing data between screens)
+    * `StatefulWidget` (For real-time UI updates like search filtering and password toggling)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 👤 Developer
+**Maryam Mohamed**
